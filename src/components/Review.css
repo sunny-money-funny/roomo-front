@@ -1,0 +1,122 @@
+/* Frame 1 */
+.frame {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+}
+
+/* 컨테이너 추가 */
+.container {
+    display: flex; /* Flexbox를 사용하여 나란히 배치 */
+    flex-direction: row; /* 왼쪽에서 오른쪽으로 배치 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    padding: 2vw; /* 여백 */
+}
+
+/* Rectangle 3: 리뷰 목록 패널 */
+.rectangle-3 {
+    width: 12vw; /* 뷰포트의 12% 너비 */
+    height: 75vh; /* 뷰포트의 75% 높이 */
+    background: #D9D9D9;
+    border: 1px solid #9E9E9E;
+    transition: width 0.3s ease;
+    margin-right: 2vw; /* 간격 조정 */
+    max-width: 30vw;
+    overflow: hidden; 
+}
+
+/* Rectangle 3이 확장된 경우 */
+.rectangle-3.expanded {
+    width: 20vw; 
+    max-width: 20vw;
+    overflow-y: auto; 
+}
+
+/* Rectangle 1 */
+.rectangle-1 {
+    width: 68vw; /* 뷰포트의 68% 너비 */
+    height: 75vh; /* 뷰포트의 75% 높이 */
+    background: #D9D9D9;
+    border: 1px solid #9E9E9E;
+    transition: width 0.3s ease;
+}
+
+/* 나머지 CSS 코드 유지 */
+.review-title {
+    width: 80%;
+    height: 10%;
+    margin: 5% auto; /* 상하 여백 자동 */
+    font-size: 2vw; /* 뷰포트에 비례하는 크기 */
+    text-align: center;
+    color: #000000;
+}
+
+.review-form {
+    width: 80%;
+    margin: 0 auto; /* 좌우 중앙 정렬 */
+}
+
+.review-input {
+    width: 100%;
+    height: 80%;
+    padding: 1.5vw; /* 반응형 패딩 */
+    font-size: 1.5vw; /* 뷰포트에 비례하는 크기 */
+    border: none;
+    outline: none;
+    background-color: transparent; /* 배경 투명하게 설정 */
+    color: #000000; /* 텍스트 색상 설정 */
+}
+
+/* 저장버튼 */
+.submit-button {
+    width: 8vw; /* 뷰포트의 8% 너비 */
+    height: 5vh; /* 뷰포트의 5% 높이 */
+    background-color: #54ABFD;
+    border: none;
+    font-size: 1.5vw; /* 뷰포트에 비례하는 크기 */
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    margin: 2vw auto; /* 위쪽 여백과 좌우 중앙 정렬 */
+    display: block;
+}
+
+/* 리뷰 목록 제목 */
+.review-list-title {
+    width: 100%;
+    height: auto; /* 높이를 자동으로 조정 */
+    font-weight: 200;
+    font-size: 1.5vw; /* 뷰포트에 비례하는 크기 */
+    text-align: center;
+    color: #000000;
+    margin-top: 20px; 
+}
+
+/* 리뷰 목록 사각형들 */
+.review-rectangles {
+    margin-top: 2vw; /* 상단 여백 */
+}
+
+/* 각 리뷰 사각형들 */
+.review-item {
+    background: #EAEAEA;
+    margin: 1vw; /* 반응형 마진 */
+    padding: 1vw; /* 반응형 패딩 */
+    font-size: 1.5vw; /* 뷰포트에 비례하는 크기 */
+}
+
+/* 닫기/열기 버튼 */
+.toggle-button {
+    width: 8vw; /* 뷰포트의 8% 너비 */
+    height: 5vh; /* 뷰포트의 5% 높이 */
+    font-weight: 200;
+    font-size: 1.2vw; /* 뷰포트에 비례하는 크기 */
+    text-align: center;
+    color: #000000;
+    background: #f2f2f2;
+    border: 1px solid #9E9E9E;
+    cursor: pointer;
+    margin: 2vw auto;
+    display: block;
+}
