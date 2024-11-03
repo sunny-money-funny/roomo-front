@@ -19,7 +19,6 @@ const Review = () => {
 
   // 로컬 스토리지에 저장
   localStorage.setItem('reviews', JSON.stringify(updatedReviews));
-
   document.getElementById("review-input").value = ''; // 입력창 초기화
 };
 
